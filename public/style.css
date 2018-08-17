@@ -1,0 +1,68 @@
+html{
+    margin:0;
+    background: #eee;
+    font-family: 'Roboto', sans-serif;
+    background: url('/images/bg-1.png') center no-repeat;
+    background-size: cover; 
+    height: 100%;
+}
+.container {
+    width:25%;
+    margin:50px 15% 0 60%;
+    box-shadow: 0 0 20px #000;
+    background: #fff;
+}
+.container a {
+    margin:25px;
+    display:inline-block;
+}
+.container h3 {
+    padding-top:25px;
+    margin:0 25px;
+    color: #2196F3;
+    animation: rainbowfy 20s infinite;
+}
+.container img {
+    max-width: 100%;
+    transition:.3s all;
+}
+.container img:hover {
+    transform: translateY(-4px);
+    filter: saturate(1.3);
+    box-shadow: 0 0 20px #000;
+}
+.text-area {
+    color:#FFC107;
+    font-family: 'Hanalei Fill', 'Roboto', sans-serif;
+    position: absolute;
+    top:50px;
+    left:150px;
+}
+.text-area h1 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    animation: fadein 2.5s ease-in;
+}
+.text-area h2 {
+    font-size: 1.8em;
+    letter-spacing: 5px;
+    animation: fadein 5s ease-in;
+}
+
+
+@keyframes rainbowfy {
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to {
+        filter:hue-rotate(360deg);
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
